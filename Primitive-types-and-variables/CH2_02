@@ -1,0 +1,26 @@
+/*
+ * Make a two variables of type String give them values "Hallo" and "World".
+ * Make a variable of type Object give it value, which is made from concatenation
+ * of anothers two variables. Print the variable of type Object and make a new variable of 
+ * type String and embezzle it the variable of type object.
+ */
+import java.util.*;
+public class H2_02 {
+
+	public static void main(String[] args) {
+		String firstVr="Hallo";
+		
+		String secondVr="World";
+		
+		Object resultVr=firstVr+" "+secondVr;
+		
+		System.out.println("The value of variale of type Object is: "+resultVr);
+		
+		String newVr=(String) resultVr;
+		
+		// chek the value of newVr
+		System.out.println("The value of variale of type Object is: "+newVr);
+
+	}
+
+}
