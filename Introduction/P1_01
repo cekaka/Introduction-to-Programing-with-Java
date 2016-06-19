@@ -1,0 +1,12 @@
+/* Write a program that prints Hallo + your name*/
+
+import java.io.*;
+public class P1_01 {
+
+	public static  void main(String[] args){
+	
+		System.out.println("Hallo Tsvetan");
+	
+	}
+	
+}
