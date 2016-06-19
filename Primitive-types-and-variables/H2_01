@@ -14,6 +14,7 @@ public class H2_01 {
 		
 		String mySex="m";
 		if(mySex=="m"){
+		// change isMale of true ( mySex="m")
 			isMale=true;
 			System.out.println("My Sex is man- "+ isMale);
 		}
