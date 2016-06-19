@@ -1,0 +1,26 @@
+/*
+ *  Write a program which prints a message to your sex. . 
+ * Make a variable isMale of type boolean and give it value according to your sex. 
+ */
+
+import java.io.*;
+public class H2_01 {
+
+	public static void main(String[] args) {
+
+		boolean isMale=false;
+		
+		//mySex variable of type String = m-man or w-woman
+		
+		String mySex="m";
+		if(mySex=="m"){
+			isMale=true;
+			System.out.println("My Sex is man- "+ isMale);
+		}
+		else{
+			System.out.println("My Sex is man- "+ isMale);
+		}
+		
+	}
+
+}
