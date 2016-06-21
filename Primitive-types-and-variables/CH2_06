@@ -1,0 +1,21 @@
+/*
+ * Write a program: Make a two variables of type "int" with values 5 and 10.
+ *  Change the values of the variables and print them.
+ */
+public class CH2_06 {
+
+	public static void main(String[] args) {
+		int a=5;
+		int b=10;
+		System.out.println("a= " +a+ " b= "+b);
+		
+		//made a help variable c.
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("After change:  a= " +a+ " b= "+b);
+
+	}
+
+}
