@@ -1,0 +1,14 @@
+/*
+ * Write a program which prints the mesage - "The "use" of quotations causes difficulties.",
+ *  without first and last quotes. 
+ */
+public class CH2_03 {
+
+
+	public static void main(String[] args) {
+		String message="The \"use\" of quotations causes difficulties";
+		System.out.println(message);
+
+	}
+
+}
