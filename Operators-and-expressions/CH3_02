@@ -1,0 +1,20 @@
+/*
+ * Write a program:
+ * Make a expression of type boolean,
+ *  which cheks, whether one number of type integer diveded on 5 and 7 have a rest 0.
+ */
+import java.util.*;
+public class CH3_02 {
+
+	public static void main(String[] args) {
+    
+		int a=55;
+		if((a%5==0)&&(a%7==0)){
+			System.out.println("The number 'a' devided on 5 and 7 have a rest 0. ");
+		}
+		else{
+			System.out.println("The number 'a' devided on 5 and 7 have a rest different of 0. ");
+		}
+	}
+
+}
