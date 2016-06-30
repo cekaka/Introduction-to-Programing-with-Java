@@ -1,0 +1,32 @@
+/*
+ * Write a program, which reads from the console the number N and prints
+ *  the sum of first N members from Fibonaci's row. 
+ */
+
+import java.util.*;
+public class CH6_05 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the number N");
+		int n = input.nextInt();
+		
+		int sumN=0;
+		int sumL=0;
+		int sumC =1;	
+		int sum=0;
+		System.out.println(sumN+" ");
+		
+		for(int i=0;i<n;i++){
+			sumN=sumL+sumC;
+			sumC=sumL;
+			sumL=sumN;
+			sum=sum+sumN;
+			
+			System.out.println(sumN+" ");	
+		}
+		System.out.println("The sum of first N members is: "+sum);
+	}
+}
