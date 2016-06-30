@@ -1,0 +1,38 @@
+*
+ * Write a program, which reads from the console positive integer number N(N<20)
+ * and prits the matrix like as:
+ *                   N=4
+ *  N=3           1 2 3 4
+ * 1 2 3          2 3 4 5
+ * 2 3 4          3 4 5 6 
+ * 3 4 5          4 5 6 7
+ * 
+ */
+import java.util.*;
+public class CH6_08 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter N:");
+		int n = input.nextInt();
+		
+		while((n>20)&&(n>1)){
+			System.out.println("N>20, Enter N:");
+			n = input.nextInt();	
+		}
+		
+		int i=n;
+		
+		for(int row=1;row<=n;row++ ){
+			for(int col=row;col<=i;col++){
+				System.out.print(col+" ");
+			}
+			System.out.println();
+			 i++;
+		}
+
+	}
+
+}
