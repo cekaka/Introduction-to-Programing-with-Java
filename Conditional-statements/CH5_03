@@ -1,0 +1,37 @@
+/*
+ * Write a program, which find the biggest number between three given numbers.
+ */
+import java.util.*;
+public class CH5_03 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the first number ");
+		double firNum = input.nextDouble();
+		
+		System.out.println("Enter the second number ");
+		double secNum = input.nextDouble();
+		
+		System.out.println("Enter the third number ");
+		double thirNum = input.nextDouble();
+		
+		double bufNum;
+		
+		if(firNum>secNum){
+			bufNum=firNum;
+		}
+		else{
+			bufNum=secNum;
+		}
+		
+		if(bufNum>thirNum){
+			System.out.println("The biggest number is  "+bufNum);
+		}
+		else{
+			System.out.println("The biggest number is  "+thirNum);
+		}
+
+	}
+
+}
