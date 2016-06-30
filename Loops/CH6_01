@@ -1,0 +1,21 @@
+/*
+ * Write a program, which prints the numbers from 1 to N. 
+ * The program  reads the number N from the console.
+ */
+import java.util.*;
+public class CH6_01 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter N");
+		int n = input.nextInt();
+		
+		for(int i=1;i<n;i++){
+			System.out.print(i+" ");
+		}
+
+	}
+
+}
