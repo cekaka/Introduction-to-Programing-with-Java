@@ -1,0 +1,38 @@
+/*
+ * Write a program, which calculates N!*K!/(N-K)! for given N and K.
+ */
+import java.util.*;
+public class CH6_07 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter N:");
+		int n = input.nextInt();
+		
+		System.out.println("Enter K:");
+		int k = input.nextInt();
+		
+		int deffNK=n-k;
+		
+		long factorialK=1;
+		long factorialN=1;
+		long factorialDeff=1;
+		
+		for(int i=k;i>0;i--){
+			 factorialK *=i;
+		}
+		
+		for(int j=n;j>0;j--){
+			 factorialN *=j;
+		}
+		
+		for(int c=deffNK;c>0;c--){
+			factorialDeff *=c;
+		}
+		 System.out.println("N!*K!/(N-K)! = "+(factorialN*factorialK)/factorialDeff);	
+	}
+
+}
