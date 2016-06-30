@@ -1,0 +1,19 @@
+/*
+ * Write a program, which reads from the console three integer numbers and return return the sum of them.
+ */
+import java.util.*;
+public class CH4_01 {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter the first whole number and press Enter");
+		int a= input.nextInt();
+		System.out.println("Enter the second whole number and press Enter");
+		int b= input.nextInt();
+		System.out.println("Enter the thirth whole number and press Enter");
+		int c= input.nextInt();
+		System.out.println("The sum of the3 numbers is: ");
+		System.out.println(+a+b+c);
+
+	}
+}
