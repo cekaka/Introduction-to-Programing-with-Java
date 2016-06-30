@@ -1,0 +1,26 @@
+/*
+ * Write a program, which checks wehther given number n(n<100) is simply.
+ */
+import java.util.*;
+public class CH3_14 {
+
+	public static void main(String[] args) {
+		int n=31;
+		double sqrN=Math.sqrt(n);
+		boolean isSimply=true;
+		for(int i=2;i<sqrN;i++){
+			if(n%i==0){
+				isSimply=false;
+				break;
+			}
+		}
+		if(isSimply!=true){
+			System.out.println("The number isn't simply.");
+		}
+		else{
+			System.out.println("The number is simply.");
+		}
+
+	}
+
+}
