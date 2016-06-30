@@ -1,0 +1,19 @@
+/*
+ * Write a program, which reads 5 numbers from the console and prints the sum of them.
+ */
+import java.util.*;
+public class CH4_06 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);	
+	int sum=0;
+	for(int i=0;i<5;i++){
+		System.out.println("Enter a number: ");
+		int n=input.nextInt();
+		sum=sum+n;
+	}
+	System.out.println(sum);
+
+	}
+
+}
