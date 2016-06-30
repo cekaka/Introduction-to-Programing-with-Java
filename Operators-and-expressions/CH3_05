@@ -1,0 +1,15 @@
+/*
+ * Write a progeam, which calculate surface - S of trapezium.
+ *  When you knew both base of trapezium and altitude
+ */
+public class CH3_05 {
+
+	public static void main(String[] args) {
+		int a=7;
+		int b=5;
+		int h=3;
+	    int s=((a+b)/2)*h;
+	    System.out.println("The surface S = "+s);
+		}
+
+}
