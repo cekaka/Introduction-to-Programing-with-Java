@@ -1,0 +1,46 @@
+/*
+ * Write a program, which reads the coefficiens a, b and c 
+ * from the console of quadratic equation ax2+bx+c=0 and (the program) calculates and prints
+ *  the real roots.
+ */
+import java.util.*;
+public class CH5_05 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the value of a");
+		int a = input.nextInt();
+		
+		System.out.println("Enter the value of b");
+		int b = input.nextInt();
+				
+		System.out.println("Enter the value of c");
+		int c = input.nextInt();
+		
+		double d = b*b-4*a*c;
+		
+		double x1;
+		double x2;
+		
+		if(d<0){
+			System.out.println("The equation has not real roots (D<0)! ");
+		}
+		if(d==0){
+			x1=x2=b/(2*a);
+			System.out.println("The equation has a one real roots (D=0)! " +x1);
+		}
+		if(d>0){
+			x1=(-b+Math.sqrt(d))/(2*a);
+			x2=(-b-Math.sqrt(d))/(2*a);
+			System.out.println("The equation has a two real roots (D>0)!");
+			System.out.println("x1="+x1);
+			System.out.println("x2="+x2);
+			
+			
+		}
+
+	}
+
+}
