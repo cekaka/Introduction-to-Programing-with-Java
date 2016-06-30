@@ -1,0 +1,23 @@
+/*
+ * Write a program, which prints the number from 1 to N, which aren't devide in 3 and 7.
+ * The program  reads the number N from the console. 
+ */
+import java.util.*;
+public class CH6_02 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter N:");
+		int n = input.nextInt();
+		
+		for(int i=1;i<n;i++){
+			if((i%7!=0)&&(i%3!=0)){
+				System.out.print(i+" ");
+			}
+		}
+
+	}
+
+}
