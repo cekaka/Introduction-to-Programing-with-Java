@@ -1,0 +1,35 @@
+/*
+* Write a program, which transforms one binary number in decimal number.
+ */
+import java.util.*;
+public class CH6_11 {
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		int [] binaryNum = new int[8];
+		int index=0;
+		double position=0;
+		double decNum=0;
+		
+		for(index=0;index<8;index++){
+			System.out.println("Enter a "+ index+" bit binary number:");
+			int number = input.nextInt();
+			binaryNum[index]= number;
+		}
+		
+		for(index=0;index<8;index++){
+			
+			if(binaryNum[index]==1){
+				
+				decNum=decNum+(binaryNum[index]*(Math.pow(2,position)));
+			}
+			position++;
+		}
+		System.out.println(decNum);	
+
+	}
+
+}
