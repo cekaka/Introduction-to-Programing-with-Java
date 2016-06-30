@@ -2,7 +2,7 @@
  * Write a program, which changes the first and last cipher of given forth ciphers integer number.
  * The number has a format abcd
  */
-public class CH3_10 {
+public class CH3_08 {
 
 	public static void main(String[] args) {
 		 int n=3661;
