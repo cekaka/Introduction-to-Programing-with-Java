@@ -1,0 +1,15 @@
+/*
+ * Write a program, which reads from the console radius r and return the perimeter of the circumference.
+ */
+import java.util.*;
+public class CH4_02 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	System.out.println("Enter the radius r and press Enter");
+	float r=input.nextFloat();
+	double p=2*Math.PI*r;
+	System.out.printf("%.2f%n",p);
+	}
+
+}
