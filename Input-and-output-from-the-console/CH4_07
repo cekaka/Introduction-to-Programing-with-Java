@@ -1,0 +1,26 @@
+/*
+ *  Write a program, which reads 5 numbers from the console and prints the smallest of them.
+ */
+import java.util.Scanner;
+public class CH4_07 {
+	
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	
+	System.out.println("Enter the first number: ");
+	int m = input.nextInt();
+	int smallestNum=m;
+	
+	for(int i=0; i<4;i++){
+		System.out.println("Enter a number: ");
+		int n = input.nextInt();
+		
+		if(n<=smallestNum){
+			smallestNum=n;
+		}
+	}
+	System.out.println("The smallest number is: "+smallestNum);
+ }
+	
+}
+
