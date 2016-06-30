@@ -1,0 +1,24 @@
+/*
+ * Write a program, which changes the second and third cipher of given forth ciphers integer number.
+ * The number has a format abcd
+ */
+public class CH3_11 {
+
+	public static void main(String[] args) {
+		 int n=6732;
+		 
+		 // first calculate every cipher separately. Then print them in the reverse order.
+		 
+		 int a=n/1000;
+		 int b=(n%1000)/100;
+		 int c=((n%1000)%100)/10;
+		 int d=((n%1000)%100)%10;
+	    
+		 System.out.print(a);
+		 System.out.print(c);
+		 System.out.print(b);
+		 System.out.print(d);
+
+	}
+
+}
