@@ -1,0 +1,48 @@
+/*
+ * Given firm has:
+ * name, adress, phonenumber, fax, webside and manager.
+ * The manager has:
+ * first name, last name, phonenumber.
+ *  Write a program, which reads a information for the firm and her manager
+ *  from the console and prints it.
+ */
+import java.util.*;
+public class CH4_03 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter the firmname and press Enter");
+		String firmName = input.nextLine();
+		
+		System.out.println("Enter the firmadress and press Enter");
+		String firmAdress = input.nextLine();
+		
+		System.out.println("Enter the firmphone and press Enter");
+		String firmPhone = input.nextLine();
+		
+		System.out.println("Enter the firmfax  and press Enter");
+		String firmFax = input.nextLine();
+		
+		System.out.println("Enter the webside  and press Enter");
+		String webSite = input.nextLine();
+		
+		System.out.println("Enter the first name of the manager  and press Enter");
+		String managerName = input.nextLine();
+		
+		System.out.println("Enter the last name of the manager  and press Enter");
+		String managerLastName = input.nextLine();
+		
+		System.out.println("Enter the phonenumber of the manager  and press Enter");
+		String managerNumber = input.nextLine();
+		
+		System.out.println("Firm information:");
+				System.out.printf(" Name: %s%n Adress: %s%n Phone: %s%n Fax: %s%n Website: %s%n%n ",firmName,
+						          firmAdress,firmPhone,firmFax,webSite);
+				System.out.println("Manager of the firm:");
+				System.out.printf(" first name: %s%n last name: %s%n number: %s%n ",managerName,managerLastName,managerNumber);
+		
+	}
+
+}
