@@ -1,0 +1,38 @@
+/*
+ * Write a program, which reads two integer numbers from the console and prints the count of numbers between them,
+ *  which devided on 5 have a rest 0;
+ */
+import java.util.*;
+public class CH4_04 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the first number n: ");
+		int n = input.nextInt();
+		
+		System.out.println("Enter the second number m:");
+		int m = input.nextInt();
+		
+		int count=0;
+		int i=0;
+		if(n<m){
+			for(i=n+1;i<m;i++){
+				if(i%5==0){
+					count++;
+				}
+			}
+		}
+		else{
+			for(i=m+1;i<n;i++){
+				if(i%5==0){
+					count++;
+				}	
+			}
+		}
+		System.out.println(count);
+		
+	}
+
+}
