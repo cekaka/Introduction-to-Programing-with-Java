@@ -1,0 +1,29 @@
+/*
+ * Write a program, which calculates the values of two integer variables and changes the values of them,
+ *  if the value of first variable is bigger than second.
+ */
+import java.util.*;
+public class CH5_01 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a first number:");
+		int firstNum = input.nextInt();
+		
+		System.out.println("Enter a second number:");
+		int secondNum = input.nextInt();
+		
+		int bufNum;
+		System.out.printf("Before change:%n first number=%d%n second number=%d%n%n",firstNum,secondNum);
+		
+		if(firstNum>secondNum){
+			bufNum=firstNum;
+			firstNum=secondNum;
+			secondNum=bufNum;
+		}
+		
+		System.out.printf("After change:%n first number=%d%n second number=%d%n",firstNum,secondNum);
+	}
+
+}
