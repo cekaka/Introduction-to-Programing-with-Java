@@ -1,0 +1,19 @@
+/*
+ * Write a program, which calculate surface - S and perimeter - P of rectangle.
+ * When you knew both side (a and b).
+ * 
+ */
+public class CH3_04 {
+
+	public static void main(String[] args) {
+
+		int a=10;
+		int b=5;
+		int p= ((2*a)+(2*b));
+		int s=a*b;
+		System.out.println("S= "+s);
+		System.out.println("P= "+p);
+				
+	}
+
+}
