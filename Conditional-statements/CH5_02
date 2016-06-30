@@ -1,0 +1,25 @@
+/*
+ * Write a program, which shows the sign of quotient of  two numbers, whithout calculates it.
+ */
+import java.util.*;
+public class CH5_02 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the first number: ");
+		double firNum = input.nextDouble();
+		
+		
+		System.out.println("Enter the second number: ");
+		double secNum = input.nextDouble();
+		
+		if(((firNum>0)&&(secNum>0))||((firNum<0)&(secNum<0))){
+			System.out.println("The sign of quotient is  + ");
+		}
+		else{
+			System.out.println("The sign of quotient is  - ");
+		}
+	}
+
+}
