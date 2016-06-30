@@ -1,0 +1,26 @@
+/*
+ * Write a program, which reads two integer numbers from the console and returns the bigger of them.
+ */
+import java.util.Scanner;
+public class CH4_05 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the first number n: ");
+		int n = input.nextInt();
+		
+		System.out.println("Enter the second number m:");
+		int m = input.nextInt();
+		
+		
+		if(n<m){
+			System.out.println(m);
+		}
+		else{
+			System.out.println(n);
+		}
+
+	}
+
+}
