@@ -1,0 +1,30 @@
+/*
+ * Write a program, which prints how zeros has the factorial in the end of given number.
+ */
+
+import java.util.*;
+public class CH6_10 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter N:");
+		int n = input.nextInt();
+		
+		long factorialN=1;
+		int zeroCount=0;
+		
+		for(int j=n;j>0;j--){
+			 factorialN *=j;
+		}
+		System.out.println(factorialN);
+		while(factorialN%10==0){
+			factorialN=factorialN/10;
+			zeroCount++;
+		}
+		
+		System.out.println("The zeros in the end of N! are:---> "+zeroCount);
+	}
+
+}
