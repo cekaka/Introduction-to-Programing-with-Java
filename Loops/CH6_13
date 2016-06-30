@@ -1,0 +1,17 @@
+/*
+ * Write a program, which prints random number between 0 and given number N
+ */
+import java.util.*;
+public class CH6_14 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a number N");
+		int n = input.nextInt();
+		
+		Random rand = new Random();
+		System.out.println(rand.nextInt(n));
+	}
+
+}
