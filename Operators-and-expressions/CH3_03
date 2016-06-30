@@ -1,0 +1,32 @@
+/*
+ * Write a program which check,
+ *  wether given a whole number hold in third position the chipher 7(from right to left)
+ */
+public class CH3_03 {
+
+	public static void main(String[] args) {
+	int number=1778;
+	int num=(number/100);
+	if(num==7){
+		System.out.println("The number "+number+" hold the chipher 7 in the thrith position (from right to left)");
+		
+	}
+	if((num!=7)&&(num<10)){
+		System.out.println("The number "+number+" hold hav not the chipher 7 in the thrith position (from right to left)");
+	}
+	
+	if(num>10){
+		int n=num%10;
+		if(n==7){
+			System.out.println("The number "+number+" hold the chipher 7 in the third position (from right to left)");
+		}
+		else{
+			System.out.println("The number "+number+" hold have not the chipher 7 in the thrith position (from right to left)");
+		}
+		
+	}
+	
+		
+	}
+
+}
