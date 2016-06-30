@@ -1,0 +1,35 @@
+/*
+ * Write a program, which gives bonus points about given points in interval[1..9]:
+ * - When the points are between 1 and 3 the program multiplies with 10.
+ * - When the points are between 4 and 6 the program multiplies with 100.
+ * - When the points are between 7 and 9 the program multiplies with 1000.
+ * - When the points are 0 or bigger than 9 program prints a Error message.
+ */
+import java.util.*;
+public class CH5_07 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in); 
+		
+		System.out.println("Enter the points:");
+		int points = input.nextInt();
+		
+		switch(points){
+		case 1: System.out.println(points*10);break;
+		case 2: System.out.println(points*10);break;
+		case 3: System.out.println(points*10);break;
+		case 4: System.out.println(points*100);break;
+		case 5: System.out.println(points*100);break;
+		case 6: System.out.println(points*100);break;
+		case 7:System.out.println(points*1000);break;
+		case 8:System.out.println(points*1000);break;
+		case 9:System.out.println(points*1000);break;
+		
+		default:System.out.println("Error points!!!");
+		}
+		
+
+	}
+
+}
