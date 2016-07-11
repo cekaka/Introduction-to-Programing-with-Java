@@ -1,0 +1,58 @@
+* Write a program, which reads two arrays from the console and checks,
+ * whether they are the same.
+ */
+import java.util.*;
+public class CH7_02 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the lenght of first array: ");
+		int fir = input.nextInt();
+		
+		System.out.println("Enter the lenght of second array: ");
+		int sec = input.nextInt();
+		
+		int[] firArray = new int[fir];
+		int[] secArray = new int[sec];
+		
+		boolean sameArray = true;
+		
+		if(fir!=sec){
+			sameArray=false;
+		}
+		
+		for(int index=0;index<firArray.length;index++){
+			System.out.println("Enter a element in the first array.");
+			firArray[index]=input.nextInt();
+			
+			System.out.println("Enter a element in the second array.");
+			secArray[index]=input.nextInt();
+			
+			if(firArray[index]!=secArray[index]){
+				sameArray=false;
+			}	
+		}
+		System.out.println("First array: ");
+		for(int i=0;i<firArray.length;i++){
+			
+			System.out.println(firArray[i]);
+		}
+		
+		System.out.println("Second array: ");
+		for(int j=0;j<secArray.length;j++){
+			
+			System.out.println(secArray[j]);
+		}
+		
+		if(!sameArray){
+			System.out.println("The arrays are different!!!");
+		}
+		else{
+			System.out.println("The arrays are the same!!!");
+		}
+	
+	}
+
+}
