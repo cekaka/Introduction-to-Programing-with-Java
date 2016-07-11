@@ -1,0 +1,65 @@
+/*
+ * Write a program,
+ *  which founds the biggest series of the same elements in array of integer numbers 
+ */
+import java.util.*;
+public class CH7_03 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the Array's lenght:");
+		int l = input.nextInt();
+		
+		int[] array = new int[l];
+		int index;
+		System.out.println("Enter the elements");
+		for(index=0;index<array.length;index++){
+			
+			array[index]=input.nextInt();
+		}
+		// current count
+		int curCount=1;
+		//maximum count
+		int maxCount=curCount;
+		// start position
+		int strPos=0;
+		
+		for(index=0;index<array.length;index++){
+			
+			if(index>0){
+				if((array[index]==array[index-1])&&(index+1!=array.length)){
+					curCount++;
+				}
+				else{
+					if(array[index]==array[index-1]){
+						curCount++;
+						index++;
+					}
+					
+					if(curCount>maxCount){
+						maxCount=curCount;
+						strPos=index-curCount;
+						curCount=1;
+					}
+				}
+			}
+				
+		}
+		//System.out.println("Start Position="+strPos);
+		//System.out.println("MaxCount="+maxCount);
+		
+		System.out.println("The biggest series of the same elements: ");
+		System.out.print("{");
+		for(index=strPos;index<maxCount+strPos;index++){
+			
+			System.out.print(array[index]+" ");	
+		}
+		System.out.print("}");
+		
+		
+		
+
+	}
+
+}
