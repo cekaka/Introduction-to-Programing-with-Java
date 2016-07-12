@@ -1,6 +1,6 @@
 /*
  * Write a program,
- *  which founds the biggest series of the same elements in array of integer numbers 
+ *  which finds the biggest series of the same elements in array of integer numbers 
  */
 import java.util.*;
 public class CH7_03 {
