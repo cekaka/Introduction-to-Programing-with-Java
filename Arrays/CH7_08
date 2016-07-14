@@ -1,0 +1,48 @@
+/*
+ * Write a program, which finds a series of numbers in array, 
+ * which sum is equal on number entered from the console. 
+ */
+import java.util.*;
+public class CH7_08 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the array's length ");
+		int l = input.nextInt();
+		
+		int[] array = new int[l];
+		
+		System.out.println("Enter a number");
+		int sum = input.nextInt();
+		
+		int curSum=0;
+		int counter=0;
+		
+		int index=0;
+		
+		for(index=0;index<array.length;index++){	
+		System.out.println("Enter a element ");
+		array[index]=input.nextInt();
+		}
+		
+		for(index=0;index<l;index++){
+				curSum=curSum+array[index];
+				counter++;
+				if(curSum==sum){
+					while(curSum>0){
+						System.out.print(array[index]+" ");
+						curSum=curSum-array[index];
+						index--;
+					}
+					break;
+				}
+				if(curSum>sum){
+					curSum=0;
+					counter=0;
+				}	
+		}
+	
+	}
+
+}
