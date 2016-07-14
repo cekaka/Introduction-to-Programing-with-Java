@@ -1,0 +1,46 @@
+/*
+ * Write a program, which finds the most often element in array.
+ */
+import java.util.*;
+public class CH7_07 {
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the array's length");
+		int l = input.nextInt();
+		
+		int[] array = new int[l];
+		int curCount=0;
+		int maxCount=0;
+		int element=0;
+		int index=0;
+	
+		
+		for( index=0; index<l;index++){
+			System.out.println("Enter a alement");
+			array[index]=input.nextInt();
+		}
+		for(int i=0;i<l;i++){
+			curCount=0;
+			for(index=0;index<l;index++){
+					if(array[i]==array[index]){
+						curCount++;		
+					}	
+			}
+			if(curCount>maxCount){
+				maxCount=curCount;
+				element=array[i];	
+			}
+			
+		}
+		System.out.println(element+" "+maxCount+"(times)");
+		
+		for(index=0;index<l;index++){
+			System.out.print(array[index]+" ");
+		}
+
+	}
+
+}
