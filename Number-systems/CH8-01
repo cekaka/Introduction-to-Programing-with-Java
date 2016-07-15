@@ -1,0 +1,73 @@
+/*
+* Write a program, which transform the binary number:
+* 1111010110011110 in decimal number and hexadecimal number..
+ */
+import java.util.*;
+public class CH8_01 {
+	public static double decNum=0;
+	
+	public static void toDecHex(){
+		int [] binaryNum = {1,1,1,1,0,1,0,1,1,0,0,1,1,1,1,0};
+		int index=0;
+		double position=0;
+		
+		for(index=0;index<16;index++){
+			
+			if(binaryNum[index]==1){
+				
+				decNum=decNum+(binaryNum[index]*(Math.pow(2,position)));
+			}
+			position++;
+		}
+		System.out.println(decNum+" In Decimal ");	
+		int num=(int) (decNum);
+		
+		
+		toHex((int) decNum);
+		}
+
+	public static void toHex(int  n){
+		int [] hexNum=new int [8]; 
+		int index=0;
+		
+		do{
+			hexNum[index]= n%16;
+			
+			 n= n/16;
+			index++;
+		}
+		while( n>0);
+		
+		
+		for(int j=7;j>=0;j--){
+			switch(hexNum[j]){
+			case 0:System.out.print("");break;
+			case 1:System.out.print("1");break;
+			case 2:System.out.print("2");break;
+			case 3:System.out.print("3");break;
+			case 4:System.out.print("4");break;
+			case 5:System.out.print("5");break;
+			case 6:System.out.print("6");break;
+			case 7:System.out.print("7");break;
+			case 8:System.out.print("8");break;
+			case 9:System.out.print("9");break;
+			case 10:System.out.print("A");break;
+			case 11:System.out.print("B");break;
+			case 12:System.out.print("C");break;
+			case 13:System.out.print("D");break;
+			case 14:System.out.print("E");break;
+			case 15:System.out.print("F");break;
+			
+			default: System.out.println("...");
+			}
+			
+		}
+		//System.out.println(n+" In hexadecimal ");	
+
+	}
+	public static void main(String[] args) {
+		
+		toDecHex();
+	}
+
+}
