@@ -1,0 +1,63 @@
+/*
+ * Write a program, which  transform the hexadecimal number:
+ *  in decimal number
+ */
+import java.util.*;
+public class CH8_06 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a count of symbols of hexadecimal number:");
+		
+		int l = input.nextInt();
+	
+		String [] hexNum =new String[l];
+		int[] arrayIn2=new int [l];
+		
+		for(int i=0;i<hexNum.length;i++){
+			System.out.println("Enter a symbol of hexadecimal number");
+			String str=input.next();
+			hexNum[i]=str;
+		}
+	
+		double decNum=0;
+		int position=0;
+			
+			for(int index2=l-1;index2>=0;index2--){
+				
+				if(hexNum[index2].equals("A")){
+					hexNum[index2]="10";
+					arrayIn2[index2]=Integer.parseInt(hexNum[index2]);	
+				}
+				if(hexNum[index2].equals("B")){
+					hexNum[index2]="11";
+					arrayIn2[index2]=Integer.parseInt(hexNum[index2]);	
+				}
+				if(hexNum[index2].equals("C")){
+					hexNum[index2]="12";
+					arrayIn2[index2]=Integer.parseInt(hexNum[index2]);	
+				}
+				if(hexNum[index2].equals("D")){
+					hexNum[index2]="13";
+					arrayIn2[index2]=Integer.parseInt(hexNum[index2]);	
+				}
+				if(hexNum[index2].equals("E")){
+					hexNum[index2]="14";
+					arrayIn2[index2]=Integer.parseInt(hexNum[index2]);	
+				}
+				if(hexNum[index2].equals("F")){
+					hexNum[index2]="15";
+					arrayIn2[index2]=Integer.parseInt(hexNum[index2]);
+				}
+				arrayIn2[index2]=Integer.parseInt(hexNum[index2]);
+				
+				decNum=(decNum+((arrayIn2[index2])*(Math.pow(16,position))));
+				position++;
+				
+			}
+			System.out.println(decNum);
+			
+	}
+
+}
