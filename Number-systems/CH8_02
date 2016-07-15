@@ -1,0 +1,123 @@
+/*
+ * Write a program, which  transform the hexadecimal number:
+ * FA in decimal number
+ */
+import java.util.*;
+public class CH8_02 {
+
+
+	public static void main(String[] args) {
+		
+		//String [] array1 = {"2","A","3","E"};
+		//int[] arrayIn1=new int [array1.length];
+		String [] array2 = {"F","A"};
+		int[] arrayIn2=new int [array2.length];
+		//String [] array3 = {"F","F","F","F"};
+		//int[] arrayIn3=new int [array3.length];
+	
+		double decNum=0;
+		double position=0;
+		
+			/*for(int index1=array1.length-1;index1>=0;index1--){
+				//int indexIn1=index;
+				if(array1[index1]=="A"){
+					array1[index1]="10";
+					arrayIn1[index1]=Integer.parseInt(array1[index1]);	
+				}
+				if(array1[index1]=="E"){
+					array1[index1]="14";
+					arrayIn1[index1]=Integer.parseInt(array1[index1]);
+				}
+				arrayIn1[index1]=Integer.parseInt(array1[index1]);
+				
+				decNum=(decNum+((arrayIn1[index1])*(Math.pow(16,position))));
+				position++;
+				
+			}
+			System.out.println(decNum);
+			decNum=0;
+			position=0;*/
+			
+			for(int index2=array2.length-1;index2>=0;index2--){
+				
+				if(array2[index2]=="A"){
+					array2[index2]="10";
+					arrayIn2[index2]=Integer.parseInt(array2[index2]);	
+				}
+				if(array2[index2]=="F"){
+					array2[index2]="15";
+					arrayIn2[index2]=Integer.parseInt(array2[index2]);
+				}
+				//arrayIn2[index2]=Integer.parseInt(array2[index2]);
+				
+				decNum=(decNum+((arrayIn2[index2])*(Math.pow(16,position))));
+				position++;
+				
+			}
+			System.out.println(decNum);
+			int inDecNum=(int) decNum;
+			
+			int [] myArray2=new int [8]; 
+			int index=0;
+			
+			do{
+				myArray2[index]=inDecNum%2;
+				inDecNum=inDecNum/2;
+				//System.out.println(myArray[index]);
+				index++;
+			}
+			while(inDecNum>0);
+			//System.out.println("Index "+index);
+			
+			for(int j=7;j>=0;j--){
+				System.out.print(myArray2[j]);
+			}
+			
+			/*decNum=0;
+			position=0;
+			index=0;
+			System.out.println(" ");
+			
+			for(int index3=array3.length-1;index3>=0;index3--){
+				
+				if(array3[index3]=="A"){
+					array3[index3]="10";
+					arrayIn3[index3]=Integer.parseInt(array3[index3]);	
+				}
+				if(array3[index3]=="F"){
+					array3[index3]="15";
+					arrayIn3[index3]=Integer.parseInt(array3[index3]);
+				}
+				arrayIn3[index3]=Integer.parseInt(array3[index3]);
+				
+				decNum=(decNum+((arrayIn3[index3])*(Math.pow(16,position))));
+				position++;
+				
+			}
+			System.out.println(decNum);
+			
+			int inDecNum3=(int) decNum;
+			
+			int [] myArray3=new int [16]; 
+			//int index3=0;
+			
+			do{
+				myArray3[index]=inDecNum3%2;
+				inDecNum3=inDecNum3/2;
+				//System.out.println(myArray[index]);
+				index++;
+			}
+			while(inDecNum3>0);
+			//System.out.println("Index "+index);
+			
+			for(int j=15;j>=0;j--){
+				System.out.print(myArray3[j]);
+			}
+			
+			decNum=0;
+			position=0;	
+			index=0;*/
+
+	}
+
+}
