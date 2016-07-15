@@ -1,0 +1,31 @@
+/*
+ * Write a program, which transform one decimal  number in binary number.
+ */
+import java.util.*;
+public class CH8_03 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the number N");
+		int n = input.nextInt();
+		
+		int [] myArray=new int [8]; 
+		int index=0;
+		
+		do{
+			myArray[index]=n%2;
+			n=n/2;
+			//System.out.println(myArray[index]);
+			index++;
+		}
+		while(n>0);
+		//System.out.println("Index "+index);
+		
+		for(int j=7;j>=0;j--){
+			System.out.print(myArray[j]);
+		}
+	
+	}
+
+}
