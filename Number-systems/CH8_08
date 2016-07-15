@@ -1,0 +1,76 @@
+/*
+* Write a program, which transform one hexadecimal number in binary number.
+*/
+
+import java.util.*;
+public class CH8_08 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the count of symbols of hexadecimal number");
+		
+		int lHex = input.nextInt();
+		int lBin = lHex*4;
+		
+		String[] hexDec = new String[lHex];
+		int[] binDec = new int[lBin];
+		
+		int indexHex=0;
+		int indexBin=0;	
+		
+		for(indexHex=0;indexHex<hexDec.length;indexHex++){
+			System.out.println("Enter a symbol of hexadecimal number");
+			String str = input.next();
+			hexDec[indexHex]=str;
+		}
+		
+		for(indexHex=hexDec.length-1;indexHex>=0;indexHex--){
+			if(hexDec[indexHex].equals("A")){
+				hexDec[indexHex]="10";
+					
+			}
+			if(hexDec[indexHex].equals("B")){
+				hexDec[indexHex]="11";
+					
+			}
+			if(hexDec[indexHex].equals("C")){
+				hexDec[indexHex]="12";
+					
+			}
+			if(hexDec[indexHex].equals("D")){
+				hexDec[indexHex]="13";
+				
+			}
+			if(hexDec[indexHex].equals("E")){
+				hexDec[indexHex]="14";
+			
+			}
+			if(hexDec[indexHex].equals("F")){
+				hexDec[indexHex]="15";
+				
+			}
+			 int n =Integer.parseInt(hexDec[indexHex]);
+			 System.out.println(n);
+			 
+			 do {
+				 System.out.println(indexBin);
+				 binDec[indexBin]=n%2;
+					n=n/2;
+					indexBin++;
+					
+				}
+			  while(n>0);
+			
+			 
+
+		}
+		for(indexBin=binDec.length-1;indexBin>=0;indexBin--){
+			System.out.print(binDec[indexBin]);
+		}
+		
+			
+		
+
+	}
+
+}
