@@ -1,0 +1,81 @@
+/*
+ * Write a program, which transforms the rome numbers in decimal numbers.
+ */
+import java.util.*;
+public class CH8_10 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the count of symbols of Rome number ");
+		int countSym = input.nextInt();
+		
+		String []romeNum = new String[countSym];
+		int[] intNums = new int[countSym];
+		
+		int index=0;
+		
+		int decNum=0;
+		
+		
+		// Inseart all symbols of rome number in array...
+		for(index=0;index<romeNum.length;index++){
+			System.out.println("Enter a symbol of Rome number:");
+			String str = input.next();
+			romeNum[index] = str;
+		}
+		
+		
+		for(index=0;index<romeNum.length;index++){
+			if(romeNum[index].equals("X")){
+				romeNum[index]="10";
+			}
+			
+			if(romeNum[index].equals("I")){
+				romeNum[index]="1";
+			}
+			
+			if(romeNum[index].equals("V")){
+				romeNum[index]="5";
+			}
+			
+			if(romeNum[index].equals("L")){
+				romeNum[index]="50";
+			}
+			
+			if(romeNum[index].equals("C")){
+				romeNum[index]="100";
+			}
+			
+			if(romeNum[index].equals("D")){
+				romeNum[index]="500";
+			}
+			
+			if(romeNum[index].equals("M")){
+				romeNum[index]="1000";
+			}
+			
+			int num=Integer.parseInt(romeNum[index]);
+			intNums[index]=num;
+			//decNum=decNum+num;
+			
+		}
+		
+		//decNum=intNums[0];
+		for(int i=0;i<intNums.length;i++){
+					if(i>0){
+						
+						if(intNums[i]>intNums[i-1]){
+							decNum=((decNum-intNums[i]-intNums[i-1])+(intNums[i]-intNums[i-1]));
+						}
+					}
+					
+					decNum=decNum+intNums[i];			
+		}
+	
+		System.out.println(decNum);
+		
+
+	}
+
+}
