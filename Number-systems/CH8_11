@@ -1,0 +1,112 @@
+/*
+ * Write a program, which transforms a decimal number between[1..999] in rome number.
+ */
+import java.util.*;
+public class CH8_11 {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	
+	System.out.println("Enter a number");
+	int num = input.nextInt();
+	
+	
+		if((num/10)<=1){
+			
+			switch(num){
+				case 1: System.out.println("I");break;
+				case 2: System.out.println("II");break;
+				case 3: System.out.println("III");break;
+				case 4: System.out.println("IV");break;
+				case 5: System.out.println("V");break;
+				case 6: System.out.println("VI");break;
+				case 7: System.out.println("VII");break;
+				case 8: System.out.println("VII");break;
+				case 9:	System.out.println("IX");break;
+				case 10:System.out.println("X");break;
+			default: System.out.println("I don't know, what is this number!!!");
+			}
+	
+		}
+		
+		if((num/10)<=10){
+
+			switch(num/10){
+				case 1: System.out.print("X");break;
+				case 2: System.out.print("XX");break;
+				case 3: System.out.print("XXX");break;
+				case 4: System.out.print("XL");break;
+				case 5: System.out.print("L");break;
+				case 6: System.out.print("LX");break;
+				case 7: System.out.print("LXX");break;
+				case 8: System.out.print("LXXX");break;
+				case 9:	System.out.print("XC");break;
+				case 10:System.out.print("C");break;
+			default: System.out.println("I don't know, what is this number!!!");
+			}
+			
+			switch(num%10){
+			case 1: System.out.print("I");break;
+			case 2: System.out.print("II");break;
+			case 3: System.out.print("III");break;
+			case 4: System.out.print("IV");break;
+			case 5: System.out.print("V");break;
+			case 6: System.out.print("VI");break;
+			case 7: System.out.print("VII");break;
+			case 8: System.out.print("VII");break;
+			case 9:	System.out.print("IX");break;
+			case 10:System.out.print("X");break;
+		default: System.out.println("I don't know, what is this number!!!");
+		}
+	
+	 }
+	 
+		if(((num/10)>10)&((num/10)<100)){
+
+			switch(num/100){
+				case 1: System.out.print("C");break;
+				case 2: System.out.print("CC");break;
+				case 3: System.out.print("CCC");break;
+				case 4: System.out.print("CD");break;
+				case 5: System.out.print("D");break;
+				case 6: System.out.print("DC");break;
+				case 7: System.out.print("DCC");break;
+				case 8: System.out.print("DCCC");break;
+				case 9:	System.out.print("CM");break;
+				case 10:System.out.print("M");break;
+			default: System.out.println("I don't know, what is this number!!!");
+			}
+			num=num%100;
+	
+			switch(num/10){
+			case 1: System.out.print("X");break;
+			case 2: System.out.print("XX");break;
+			case 3: System.out.print("XXX");break;
+			case 4: System.out.print("XL");break;
+			case 5: System.out.print("L");break;
+			case 6: System.out.print("LX");break;
+			case 7: System.out.print("LXX");break;
+			case 8: System.out.print("LXXX");break;
+			case 9:	System.out.print("XC");break;
+		default: System.out.println("I don't know, what is this number!!!");
+		}
+		switch(num%10){
+			case 1: System.out.print("I");break;
+			case 2: System.out.print("II");break;
+			case 3: System.out.print("III");break;
+			case 4: System.out.print("IV");break;
+			case 5: System.out.print("V");break;
+			case 6: System.out.print("VI");break;
+			case 7: System.out.print("VII");break;
+			case 8: System.out.print("VII");break;
+			case 9:	System.out.print("IX");break;
+			case 10:System.out.print("X");break;
+		default: System.out.println("I don't know, what is this number!!!");
+		}	
+	
+	 }
+
+	
+	}
+
+}
