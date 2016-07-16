@@ -1,0 +1,37 @@
+/*
+ * Write a program, which transforms a binary number in decimal number by Horner's method
+ * 1001(2) = ((1.2+0).2+0).2+1 = 2.2.2+1 = 9
+ */
+import java.util.*;
+public class CH8_09 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a count of bits of binary number ");
+		int countBit = input.nextInt();
+		
+		int[] binaryNum = new int[countBit];
+		int index=0;
+		int decNum=0;
+		int sum=0;
+		
+		//Inseart all elements...
+		for(index=0;index<binaryNum.length;index++){
+			System.out.println("Enter a bit of binary number from left to right");
+			binaryNum[index] = input.nextInt();
+			
+			
+		}
+		
+		for(index=0;index<binaryNum.length-1;index++){
+			
+			decNum=((decNum)+binaryNum[index])*2;
+		}
+		
+		decNum=decNum+binaryNum[binaryNum.length-1];
+		
+		System.out.println(decNum);
+	}
+
+}
