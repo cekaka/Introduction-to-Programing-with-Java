@@ -1,0 +1,73 @@
+/*
+ * Write a method, which compare the element in
+ * given position of array whether is bigger or smaller than its neighboring elements.
+ */
+import java.util.*;
+public class CH9_05_Updated {
+	
+	public static void compareMidleWithLeft(int array[],int position){
+		if(array[position]>array[position-1]){
+			System.out.println("Element in position "+position+
+					" is bigger than element in "+ (position-1)+
+					"("+array[position]+">"+array[position-1]+")");
+		}
+		else{
+			System.out.println("Element in position "+position+
+					" is smaller than element in position "+ (position-1)+
+					"("+array[position]+"<"+array[position-1]+")");
+		}
+	}
+	
+	public static void compareMidleWithRight(int array[],int position){
+		if(array[position]>array[position+1]){
+   			System.out.println("Element in position "+position+
+   					" is bigger than element in position "+ (position+1)+
+   					"("+array[position]+">"+array[position+1]+")");
+   		}
+   		else{
+   			System.out.println("Element in position "+position+
+   					" is smaller than element in position "+ (position+1)+
+   					"("+array[position]+"<"+array[position+1]+")");
+   		}
+		  
+	}
+
+   public static void compareMiddleElement (){
+	   Scanner input = new Scanner(System.in);
+	   
+	   System.out.println("Enter a lenght of array:");
+	   int l = input.nextInt();
+	   
+	   int [] array = new int[l];
+	   int index=0;
+	   
+	   for(index=0;index<array.length;index++){
+		   System.out.println("Enter a element");
+		   array[index] = input.nextInt();
+	   }
+	   
+	   System.out.println("Enter a position of element for compare.");
+	   int position = input.nextInt();
+	   
+		   if(position==array.length-1){
+		   	
+			   compareMidleWithLeft(array, position);
+			   
+		   } else if(position==0){
+			  
+			   compareMidleWithRight(array,position);
+		   }
+		   else{
+			 
+			   compareMidleWithLeft(array, position);
+			   compareMidleWithRight(array,position);
+		   }
+		   
+   }
+   
+	public static void main(String[] args) {
+		compareMiddleElement ();
+
+	}
+
+}
