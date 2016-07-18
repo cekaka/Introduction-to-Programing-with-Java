@@ -1,0 +1,23 @@
+/*
+ * Write a method, which by input name prints Hello <name>.
+ * Example (Hello Peter).  Write a program, which tests this method!
+ */
+import java.util.*;
+public class CH9_01 {
+
+	public static void printName(String name){
+		System.out.println("Hello "+ name);
+		
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter  your name:");
+		String yourName=input.nextLine();
+		
+		printName(yourName);
+
+	}
+
+}
