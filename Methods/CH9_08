@@ -1,0 +1,31 @@
+/*
+ * Write a program, which prints n! for 1<n<100.
+ */
+import java.util.*;
+public class CH9_08 {
+
+	public static void printFactorial(int number){
+		
+		long factorial=1;
+		for(int i=number;i>0;i--){
+			factorial*=i;
+		}
+		System.out.println(factorial);
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a number");
+		int num = input.nextInt();
+		
+			while((num>100)||(num<1)){
+				System.out.println("Enter a number between 1...100");
+				num = input.nextInt();
+			}
+		
+		printFactorial(num);
+
+	}
+
+}
