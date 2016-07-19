@@ -1,6 +1,6 @@
 /*
  * Write a method, which compare the element in
- * given position of array whether is bigger or smaller than its neighboring elements.
+ * given position of array whether is bigger or smaller than its neighbors elements.
  */
 import java.util.*;
 public class CH9_05_Updated {
