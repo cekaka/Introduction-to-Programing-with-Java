@@ -1,0 +1,53 @@
+/*
+ *Write method, which returns the position of 
+ *the first element of the array that is bigger than both its neighbors simultaneously,
+ * or -1 if there is no such element. 
+ */
+
+import java.util.*;
+public class CH9_06 {
+	
+	public static int printFirBigElem(int array[]){
+		
+		boolean isExist = false;
+		int elemPosition = 0;
+		
+		for(int i=1;i<array.length-2;i++){
+			if((array[i]>array[i-1])&&(array[i]>array[i+1])){
+				isExist = true;
+				elemPosition=i;
+				break;	
+			}
+		 	
+		}
+		if(isExist){
+		return elemPosition;
+		}
+		else{
+			elemPosition=-1;
+			return elemPosition;
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter array's length");
+		int l = input.nextInt();
+		
+		int[] array = new int[l];
+		for(int index=0;index<array.length;index++){
+			System.out.println("Enter a element");
+			array[index]=input.nextInt();
+		}
+		
+		int position = printFirBigElem(array);
+		if(position==-1){
+			System.out.println("That element doesn't exist "+position);
+		}
+		else{
+			System.out.println("The position of first element, which is bigger than its neighbors elements is : "+position);
+		}
+	}
+
+}
