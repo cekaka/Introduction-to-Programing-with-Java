@@ -1,0 +1,41 @@
+/*
+ * Write a program, which makes a square matrix like this
+ * Example (4, 4) 
+ * 1 5 9 13       
+ * 2 6 10 14
+ * 3 7 11 15
+ * 4 8 12 16
+ * and prints it. The program reads the size of matrix from the console.
+ * 
+ */
+import java.util.*;
+public class CH7_10 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a count of rows");
+		int rows = input.nextInt();
+		int cols = rows;
+		
+		int[][] matrix=new int [rows][cols];
+		int startValue=1;
+	
+		for(int row=0;row<rows;row++){
+		
+			if(row>0){
+			startValue=row+1;
+			}
+			for(int col=0;col<cols;col++){
+		
+				matrix[row][col]=startValue;
+				System.out.printf("%d ",matrix[row][col]);
+				startValue=startValue+rows;
+			}
+			System.out.println();
+			
+		}	
+
+	}
+
+}
