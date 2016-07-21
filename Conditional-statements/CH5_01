@@ -1,5 +1,5 @@
 /*
- * Write a program, which calculates the values of two integer variables and changes the values of them,
+ * Write a program, that calculates the values of two integer variables and changes the values of them,
  *  if the value of first variable is bigger than second.
  */
 import java.util.*;
