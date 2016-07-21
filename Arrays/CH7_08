@@ -1,5 +1,5 @@
 /*
- * Write a program, which finds a series of numbers in array, 
+ * Write a program, that finds a series of numbers in array, 
  * which sum is equal on number entered from the console. 
  */
 import java.util.*;
