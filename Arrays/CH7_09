@@ -1,6 +1,6 @@
 /*
  * Write a program,
- *  which prints the positions of letters in english alphabet from given string.
+ *  that prints the positions of letters in english alphabet from given string.
  */
 import java.util.*;
 public class CH7_09 {
