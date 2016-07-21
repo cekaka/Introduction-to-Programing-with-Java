@@ -1,5 +1,5 @@
 /*
- * Write a program, which shows the sign of quotient of  two numbers, whithout calculates it.
+ * Write a program, that shows the sign of quotient of  two numbers, whithout calculates it.
  */
 import java.util.*;
 public class CH5_02 {
