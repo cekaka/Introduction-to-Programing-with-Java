@@ -1,0 +1,53 @@
+/*
+ *  Write a program, 
+ *  that generates random advertisement for a product.
+ *  Messages must consist of laudatory phrase, followed by write-event,
+ *  followed by author (first and second name) and city selected from lists prepared in advance.
+ *  Example:
+ *  This is the best product in this category. I was able to change.
+    Petyr Krystev, Pernik
+ */
+
+import java.util.*;
+public class CH10_05 {
+
+	private static final String[] ARRAY_COMPLIMENTS_PHRASES={"The product is excellent.",
+			"This is a great product.","Constant use this product.","This is the best product in this category."};
+	private static final String[] LAUDATORY_STORIES={"I was able to change.","He made a miracle.","I can not believe it, but I feel great."};
+	
+	private static final String[] NAME_CITY={"Diana Agelova, Plovdiv","Tsvetan Petrov, Sofia","Tanq Ilieva Ruse","Petyr Krystev, Pernik"};
+	
+	private static Random rnd=new Random();
+	
+	private static String randomPhrase(String [] array){
+			 
+			String phrase=ARRAY_COMPLIMENTS_PHRASES[new Random().nextInt(ARRAY_COMPLIMENTS_PHRASES.length)];
+			System.out.print(phrase+" ");
+
+		return phrase;
+	}
+	
+	private static String randomLaudStorie(String [] array){
+		
+		String laudStorie=LAUDATORY_STORIES[new Random().nextInt(LAUDATORY_STORIES.length)];
+		System.out.println(laudStorie);
+
+		return laudStorie;
+	}
+	
+	private static String randomFirstName(String [] array){
+		
+		String firstName=NAME_CITY[new Random().nextInt(NAME_CITY.length)];
+		System.out.println(firstName);
+
+		return  firstName;
+	}
+	
+	public static void main(String[] args) {
+	
+		randomPhrase(ARRAY_COMPLIMENTS_PHRASES);
+		randomLaudStorie(LAUDATORY_STORIES);
+		randomFirstName(NAME_CITY);
+	}
+
+}
