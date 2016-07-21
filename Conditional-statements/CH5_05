@@ -1,5 +1,5 @@
 /*
- * Write a program, which reads the coefficiens a, b and c 
+ * Write a program, that reads the coefficiens a, b and c 
  * from the console of quadratic equation ax2+bx+c=0 and (the program) calculates and prints
  *  the real roots.
  */
