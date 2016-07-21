@@ -1,5 +1,5 @@
 /*
- * Write a program, which makes a Array whith 20 integer elements,
+ * Write a program, that makes a Array whith 20 integer elements,
  * the values of all of them is his index miltiplied by 5.
  * Print the elements.
  */
