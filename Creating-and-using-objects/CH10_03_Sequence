@@ -1,0 +1,25 @@
+/*
+ * Make your own package,
+ * Chapter11 put in it the both classes Cat and Sequence from the chapter's examples.
+ * Make one more own package Chapter11.examples in it make a classes which, 
+ * tests the calsses Cat and Sequence.
+ */
+package Chapter11;
+
+public class Sequence {
+
+	
+	public static int currentValue= -1;
+	
+	public Sequence(){
+		
+	}
+	
+	public static int nextValue(){
+		currentValue++;
+		return currentValue;
+	
+		
+	}
+	
+}
