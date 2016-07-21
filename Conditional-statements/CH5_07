@@ -1,5 +1,5 @@
 /*
- * Write a program, which gives bonus points about given points in interval[1..9]:
+ * Write a program, that gives bonus points about given points in interval[1..9]:
  * - When the points are between 1 and 3 the program multiplies with 10.
  * - When the points are between 4 and 6 the program multiplies with 100.
  * - When the points are between 7 and 9 the program multiplies with 1000.
