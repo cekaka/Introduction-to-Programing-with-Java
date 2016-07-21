@@ -1,0 +1,61 @@
+/*
+ * Make your own package,
+ * Chapter11 put in it the both classes Cat and Sequence from the chapter's examples.
+ * Make one more own package Chapter11.examples in it make a classes which, 
+ * tests the calsses Cat and Sequence.
+ */
+package Chapter11;
+
+public class Cat {
+
+	public String name;
+	
+	public String color;
+	
+	public String getName(){
+		
+		return this.name;
+		
+	}
+	
+	
+	public void setName(){
+		
+		this.name =name;
+		
+		
+		
+	}
+	
+	public String getcolor(){
+		
+		return this.color;
+	}
+	
+	
+	public void setColor(){
+		
+		this.color=color;
+	}
+	
+	
+	public Cat(String name,String color){
+		
+		
+		this.name=name;
+		this.color=color;
+		
+	}
+	
+	public Cat() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public void sayMiau(){
+		
+		System.out.printf("Cat %s said: Miauuuuuuu! ", name);
+	}
+}
+
+
