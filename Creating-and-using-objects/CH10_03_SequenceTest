@@ -1,0 +1,22 @@
+/*
+ * Make your own package,
+ * Chapter11 put in it the both classes Cat and Sequence from the chapter's examples.
+ * Make one more own package Chapter11.examples in it make a classes that, 
+ * tests the calsses Cat and Sequence.
+ */
+package Chapter11.examples;
+import Chapter11.*;
+
+public class SequenceTest {
+
+	public SequenceTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		System.out.printf("[1..3] %d,%d,%d ",Sequence.nextValue(),
+				Sequence.nextValue(),Sequence.nextValue());
+
+	}
+
+}
