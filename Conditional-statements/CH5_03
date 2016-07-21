@@ -1,5 +1,5 @@
 /*
- * Write a program, which find the biggest number between three given numbers.
+ * Write a program, that find the biggest number between three given numbers.
  */
 import java.util.*;
 public class CH5_03 {
