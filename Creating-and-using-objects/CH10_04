@@ -1,0 +1,25 @@
+/*
+ * Write a program, that makes 10 objects of class Cat and gives names of kind CatN,
+ * where N is next number of the object.
+ *  The program must call the method sayMiau() for evryone object. 
+ */
+import java.util.*;
+import Chapter11.*;
+
+public class CH10_04 {
+
+
+
+	public static void main(String[] args) {
+		Cat[] catArray = new Cat[11];
+		
+		Cat someCat=new Cat();
+		
+		for(int n=0; n<11;n++){
+			catArray[n]= new Cat("Cat"+n,"color"+n);
+			catArray[n].sayMiau();
+		}
+
+	}
+
+}
