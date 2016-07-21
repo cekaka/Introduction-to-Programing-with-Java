@@ -1,4 +1,4 @@
-* Write a program, which reads two arrays from the console and checks,
+* Write a program, that reads two arrays from the console and checks,
  * whether they are the same.
  */
 import java.util.*;
