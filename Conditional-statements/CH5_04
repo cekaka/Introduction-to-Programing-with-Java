@@ -1,5 +1,5 @@
 /*
- * Write a program, which reads a cipher- (0-9) and prints the name of it on bulgarian.
+ * Write a program, that reads a cipher- (0-9) and prints the name of it on bulgarian.
  */
 import java.util.*;
 public class CH5_04 {
