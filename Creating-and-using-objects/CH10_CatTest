@@ -1,0 +1,24 @@
+/*
+ * Make your own package,
+ * Chapter11 put in it the both classes Cat and Sequence from the chapter's examples.
+ * Make one more own package Chapter11.examples in it make a classes that, 
+ * tests the calsses Cat and Sequence.
+ */
+package Chapter11.examples;
+import Chapter11.*;
+
+public class CatTest {
+
+	public CatTest() {
+		
+	}
+
+	public static void main(String[] args) {
+		Cat someCat = new Cat("Johny","white");
+		System.out.println("The name of someCat is " +someCat.getName());
+		System.out.println("The color of someCat is " +someCat.getcolor());
+		someCat.sayMiau();
+		
+	}
+
+}
