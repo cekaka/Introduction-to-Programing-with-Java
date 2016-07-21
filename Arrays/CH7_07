@@ -1,5 +1,5 @@
 /*
- * Write a program, which finds the most often element in array.
+ * Write a program, that finds the most often element in array.
  */
 import java.util.*;
 public class CH7_07 {
