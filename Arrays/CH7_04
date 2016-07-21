@@ -1,5 +1,5 @@
 /*
- * Write a program, which compares two arrays of char symbols and checks 
+ * Write a program, that compares two arrays of char symbols and checks 
  * which is more forward lexicographical.
  */
 import java.util.*;
