@@ -1,0 +1,22 @@
+/*
+ * Write a program,
+ *  that by given two katets 'a' and 'b' calculate the hipotenuse in right-angled triangle.
+ */
+import java.util.*;
+public class CH10_02 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a leg 'a'");
+		double a = input.nextDouble();
+		
+		System.out.println("Enter a leg 'b'");
+		double b = input.nextDouble();
+		
+		double c = Math.sqrt((Math.pow(a, 2.0)+Math.pow(b, 2.0)));
+		System.out.println("The hipotenuse c= "+c);
+
+	}
+
+}
