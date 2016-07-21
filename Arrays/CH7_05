@@ -1,6 +1,6 @@
 /*
  * Write a program,
- *  which finds the biggest series of the increase elements in array of integer numbers 
+ *  that finds the biggest series of the increase elements in array of integer numbers 
  */
 import java.util.*;
 public class CH7_05 {
