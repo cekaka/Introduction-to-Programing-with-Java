@@ -1,5 +1,5 @@
 /*
- * Write a program, which reads two integer numbers from the console
+ * Write a program, that reads two integer numbers from the console
  * N and K, and array of N elements.
  * Find these K elements, with the maximum sum.
  */
